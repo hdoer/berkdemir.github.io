@@ -1,7 +1,7 @@
 # Setup
 title:               BD
 tagline:             'Tunnels, Geotechnics and Codes'
-description:         'A personal website to share notes on tunnels, geotechnical engineering and codes. - Berk Demir'
+description:         'A personal website to share notes on tunnels, geotechnical engineering and codes. <br>- Berk Demir'
 url:                 https://berkdemir.github.io
 baseurl:             ''
 paginate:            10
@@ -11,7 +11,7 @@ permalink:           pretty
 author:
   name:              Berk Demir
   url:               www.linkedin.com/in/bdberkdemir
-  email:             bdberkdemir@gmail.com
+  email:             bdberkdemir@gmail.comy
 
 # Gems
 plugins:
