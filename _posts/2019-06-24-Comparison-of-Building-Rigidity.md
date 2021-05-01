@@ -5,11 +5,9 @@ title: Comparison of Building Rigidity Calculation Approaches to Estimate Tunnel
 
 Estimating damage level on the existing buildings due to tunnelling is a tricky business which depend on many factors and cannot be over-simplified. But one of the simplifications that has been used commonly is *equivalent beam method.*
 
-![BuildingRigidity-1](_posts/images/BuildingRigidity-1.png)
 
 
-
-
+![BuildingRigidity-1](../images/BuildingRigidity-1.png)
 
 *Equivalent beam method* allows us to simplify the rigidity of buildings in a simple Mindlin beam. Why do we need the rigidity of the building to come into our numerical models? We have many evidences that show us *greenfield deformations* (which are deformations due to tunnelling on level ground without any structure.) are much higher and narrower than building deformations caused by tunnelling. One evidence is given my Frischman et. al. (1994) and reported by Mair, Taylor and Burland (1996).
 
