@@ -7,7 +7,7 @@ Hey there.
 
 This is Berk Demir. A geotechnical / tunnel design engineer with little bit coding experience. 
 
-<img src="/images/profile.png" alt="img" style="zoom:50%;" />
+<img float = "right" src="/images/profile.png" alt="img" style="zoom:50%;" />
 
 You can find more about me in following links:
 
