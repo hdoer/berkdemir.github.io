@@ -4,7 +4,7 @@ tagline:             'Tunnels, Geotechnics and Codes'
 description:         'A personal website to share notes on tunnels, geotechnical engineering and codes. <br>- Berk Demir'
 url:                 https://berkdemir.github.io
 baseurl:             ''
-paginate:            10
+paginate:            30
 permalink:           pretty
 
 
