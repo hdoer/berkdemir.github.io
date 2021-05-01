@@ -17,7 +17,7 @@ There is a clear explanation for that: Because finite element method does not wo
 
 But let's consider a tunnel. As you can see below, the real case is in first row. If we want the ground loads to act on the permanent lining, we can't just change the material properties and hope for the best. We have to **simulate the degradation of the temporary lining.** There are several methods for this such as gray rock or assuming a certain thickness of shotcrete thickness is degraded. However, some project requirements do not allow for the consideration of temporary lining for permanent lining analyses at all. This is the case for subway projects in Turkey.
 
-![Plates](/images/1614287907556)
+![Plates](/images/1614287907556.png)
 
 In the second row, you see the **wrong way** of using plates for tunnel design. If we use this method, structural forces will be less than actual. Why?
 
@@ -29,7 +29,7 @@ Let's remember few things and consider the above case of wrong use of plates:
 
 See the example below for assuming temporary lining is 25 cm and the permanent lining is 35 cm. Let me be clear: I do not recommend applying permanent lining directly, I have never used this method in design. What should we do is **TRANSFERRING THE GROUND LOADS FROM TEMPORARY LINING TO PERMANENT LINING.** To do that, the methodology should be revised to model both at the same time and degrading the temporary lining in long term. One can use a combination of volume elements and plate elements so that volume elements are deactivated in long term and only plates are left in place.
 
-![Moment Distribution](/images/1614288406973)
+![Moment Distribution](/images/1614288406973.png)
 
 **When can be changing plate properties a good idea?**
 
@@ -43,7 +43,7 @@ There is a really nice [explanation](https://communities.bentley.com/products/ge
 
 There is an option in Rocscience's RS2 for changing materials that allow users to select the soil volume's stress state. If we select the initial element loading as none, it will recalculate the stress when a certain material model is introduced to the model.
 
-![FEM Procedure](/images/1614286906765)
+![FEM Procedure](/images/1614286906765.png)
 
 **If we create a small unbalanced load to tweak the settings?**
 
