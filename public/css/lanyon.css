@@ -434,7 +434,8 @@ a.pagination-item:hover {
  */
 
 /* Red */
-
+.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #ac4142;
 }
 .theme-base-08 .container a,
 .theme-base-08 .sidebar-toggle,
