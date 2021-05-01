@@ -5,9 +5,7 @@ title: Comparison of Building Rigidity Calculation Approaches to Estimate Tunnel
 
 Estimating damage level on the existing buildings due to tunnelling is a tricky business which depend on many factors and cannot be over-simplified. But one of the simplifications that has been used commonly is *equivalent beam method.*
 
-![image-20210501223408297](C:\Users\BD\Documents\GitHub\berkdemir.github.io\images\image-20210501223408297.png)
-
-![BuildingRigidity-1](../images/BuildingRigidity-1.png)
+![BuildingRigidity-1]({{site.url}}/images/BuildingRigidity-1.png)
 
 *Equivalent beam method* allows us to simplify the rigidity of buildings in a simple Mindlin beam. Why do we need the rigidity of the building to come into our numerical models? We have many evidences that show us *greenfield deformations* (which are deformations due to tunnelling on level ground without any structure.) are much higher and narrower than building deformations caused by tunnelling. One evidence is given my Frischman et. al. (1994) and reported by Mair, Taylor and Burland (1996).
 
@@ -17,7 +15,7 @@ The simpler solution is equivalent beam method. To determine the EI and EA of th
 
 As authors state, this is an over-estimation since this assumption holds true only for rigidly framed structures. But they also summarize another method which is also described in CIRIA report 200 by Mair and Taylor (2001). Using this method, authors have predicted the deformations before the construction (Class A prediction) and results are very close to measurements. In this method, moment of inertia of each slab is summed up by neglecting A*y² term.
 
-![image-20210501214235559](../images/BuildingRigidity-2.png)
+![image-20210501214235559]({{site.url}}/images/BuildingRigidity-2.png)
 
 Note that in both methods equivalent area of the beam can be calculated using sum of the area of each slab.
 
@@ -35,9 +33,9 @@ Views of full structural model and equivalent beam model are given below:
 
 Results are very surprising for me:
 
-![image-20210501214422935](../images/BuildingRigidity-4.png)
+![image-20210501214422935]({{site.url}}/images/BuildingRigidity-4.png)
 
-![image-20210501214300052](../images/BuildingRigidity-3.png)
+![image-20210501214300052]({{site.url}}/images/BuildingRigidity-3.png)
 
 What do we see here? First of all, due to very high EI and EA calculated using parallel axis theorem resulted in a rigid beam rotation without significant bending of the beam. But full structural model does not behave like this. In fact, vertical deformations calculated using full structural model and equivalent beam using algebraic sum of inertias practically **same.** Same conclusion applies to lateral deformations too.
 
