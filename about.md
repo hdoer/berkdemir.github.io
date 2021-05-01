@@ -9,7 +9,7 @@ This is Berk Demir. A geotechnical / tunnel design engineer with little bit codi
 
 You can find more about me in my Linkedin page or in my CV.
 
-<iframe src="https://onedrive.live.com/embed?cid=70B05D5228B6B786&resid=70B05D5228B6B786%21740848&authkey=ADXEbX-qOaAm5xk&em=2" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="bdberkdemir" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://tr.linkedin.com/in/bdberkdemir?trk=profile-badge">Berk Demir</a></div>
 
