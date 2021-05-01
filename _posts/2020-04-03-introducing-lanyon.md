@@ -13,6 +13,8 @@ Poole is the Jekyll Butler, serving as an upstanding and effective foundation fo
 
 
 
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6771757594685046784" height="738" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 * Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
 * Mobile friendly design and development
 * Easily scalable text and component sizing with `rem` units in the CSS
