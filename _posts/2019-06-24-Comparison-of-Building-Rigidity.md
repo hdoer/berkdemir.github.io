@@ -17,7 +17,7 @@ The simpler solution is equivalent beam method. To determine the EI and EA of th
 
 As authors state, this is an over-estimation since this assumption holds true only for rigidly framed structures. But they also summarize another method which is also described in CIRIA report 200 by Mair and Taylor (2001). Using this method, authors have predicted the deformations before the construction (Class A prediction) and results are very close to measurements. In this method, moment of inertia of each slab is summed up by neglecting A*y² term.
 
-![Bu resim için metin sağlanmadı](https://media-exp1.licdn.com/dms/image/C4E12AQHe9rv_Uij3Xg/article-inline_image-shrink_1000_1488/0/1563989794196?e=1625097600&v=beta&t=Paa4xoQ_dUEP5agUsem5impeQrmldQ-nSzDKKIb0Nnk)
+![image-20210501214235559](../images/BuildingRigidity-2.png)
 
 Note that in both methods equivalent area of the beam can be calculated using sum of the area of each slab.
 
@@ -33,11 +33,11 @@ I have modelled a building in almost-full detail. Of course, there are still man
 
 Views of full structural model and equivalent beam model are given below:
 
+Results are very surprising for me:
 
+![image-20210501214422935](../images/BuildingRigidity-4.png)
 
-Results are very suprising for me:
-
-![Bu resim için metin sağlanmadı](https://media-exp1.licdn.com/dms/image/C4E12AQE45YalBRv-sw/article-inline_image-shrink_1000_1488/0/1563992271275?e=1625097600&v=beta&t=CUs4T3do5E_9aKdCh3RqUgxwBWCg-6zKhWxxw-oErwI)
+![image-20210501214300052](../images/BuildingRigidity-3.png)
 
 What do we see here? First of all, due to very high EI and EA calculated using parallel axis theorem resulted in a rigid beam rotation without significant bending of the beam. But full structural model does not behave like this. In fact, vertical deformations calculated using full structural model and equivalent beam using algebraic sum of inertias practically **same.** Same conclusion applies to lateral deformations too.
 
