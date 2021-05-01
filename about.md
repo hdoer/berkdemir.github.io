@@ -12,4 +12,4 @@ You can find more about me in following links:
 * [Linkedin](https://www.linkedin.com/in/bdberkdemir/)
 * [Github](https://github.com/berkdemir)
 
-<img src="profile.png" alt="img" style="zoom:50%;" />
+<img src="images/profile.png" alt="img" style="zoom:50%;" />
