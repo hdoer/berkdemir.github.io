@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plaxis and Plate Properties: A Look into the FE Adaptation of Long Term Stiffness Changes
+title: Plaxis and Plate Properties - A Look into the FE Adaptation of Long Term Stiffness Changes
 ---
 
 There was a [question](https://communities.bentley.com/products/geotech-analysis/f/plaxis-soilvision-forum/209838/diaphragm-wall-movement-due-to-reduction-of-stiffness/636050#636050) regarding Plaxis in Bentley forum: A user asked the following question -paraphrased-:
