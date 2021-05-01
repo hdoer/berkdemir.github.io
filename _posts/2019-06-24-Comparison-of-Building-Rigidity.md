@@ -5,7 +5,7 @@ title: Comparison of Building Rigidity Calculation Approaches to Estimate Tunnel
 
 Estimating damage level on the existing buildings due to tunnelling is a tricky business which depend on many factors and cannot be over-simplified. But one of the simplifications that has been used commonly is *equivalent beam method.*
 
-
+![image-20210501223408297](C:\Users\BD\Documents\GitHub\berkdemir.github.io\images\image-20210501223408297.png)
 
 ![BuildingRigidity-1](../images/BuildingRigidity-1.png)
 
@@ -43,7 +43,7 @@ What do we see here? First of all, due to very high EI and EA calculated using p
 
 So, this simple work-out tells us that algebraic sum method is much more suitable for framed buildings. What is your opinion and experience on this topic? What is your daily practice when assessing tunnel-induced damages on buildings?
 
-**References:**
+## References:
 
 - Potts, D. M., & Addenbrooke, T. I. (1997, April). A structure's influence on tunnelling-induced ground movements. In *Proceedings of the Institution of Civil Engineers: Geotechnical Engineering* (Vol. 125, No. 2).
 - Mair, R. J., & Taylor, R. N. (2001). 14 Elizabeth House: settlement predictions. *Building Response to Tunnelling: Case Studies from Construction of the Jubilee Line Extension, London*, *1*, 195.

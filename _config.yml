@@ -7,7 +7,6 @@ baseurl:             ''
 paginate:            10
 permalink:           pretty
 
-include: "_posts/images"
 
 # About/contact
 author:
