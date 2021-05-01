@@ -1,6 +1,7 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
+
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
@@ -26,7 +27,7 @@
     {% endfor %}
 
     <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    <a class="sidebar-nav-item" href="https://www.linkedin.com/in/bdberkdemir/">Linkedin</a>
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
@@ -35,7 +36,4 @@
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
     </p>
   </div>
-  <body class="sidebar-overlay">
-  ...
-</body>
 </div>
