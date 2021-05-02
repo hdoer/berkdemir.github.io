@@ -202,7 +202,7 @@ pre code {
 .gist .gist-file .gist-data {
   font-size: .8rem !important;
   line-height: 1.4;
-  height: 500 px;
+  max-height: 500 px;
 }
 .gist code {
   padding: 0;
