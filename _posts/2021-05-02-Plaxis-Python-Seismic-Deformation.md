@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Plaxis-Python Connection - Seismic Deformation
+use_math: true
 ---
+
+1
 
 For underground structures, a rough but reasonable simplification is pseudo-static deformation method. In this method, we apply seismic strain which can be calculated as the ratio of effective PGV (Peak Ground Velocity) to effective shear wave velocity.
 
