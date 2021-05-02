@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img src="/images/profile.png" alt="img" style="zoom:50%;" />
+<img src="/images/profile.png" alt="img" style="zoom:40%;" />
 
 Hey there.
 
