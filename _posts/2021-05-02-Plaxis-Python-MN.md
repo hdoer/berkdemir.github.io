@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plaxis-Python Connection
+title: Plaxis-Python Connection - MN Interaction
 ---
 
 
