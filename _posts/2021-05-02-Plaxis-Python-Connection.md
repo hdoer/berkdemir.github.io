@@ -33,6 +33,12 @@ An example output of `group_list_func()` given below.
 
 `([<Entity {073DA50B-22A0-4D85-B9B1-E6470DC89EC4}>], ['RetainingWall'])`
 
+
+
+## Disclaimer
+
+I am not a coder, software engineer. So, there are many don't-dos in the codes below. For example, no proper error handling is used. The proposed codes' runtime can be decreased significantly. You should rewrite everything given below to have a proper code. If you do not know Plaxis-Python connection but you are experienced in Python, you can find clever ways to rewrite the code, but this article will help you to get started. If you find a better way to write these codes, please let me know and I can edit the Gist and post by thanking you.
+
 ## Before the Codes
 
 There are several ways to contact with Plaxis using Python. One of them is using the interpreter coming built-in with Plaxis for short codes. You can reach this by Expert - Python - Interpreter menu. This is already connected to Plaxis without a need for `boilerplate` code that calls for the `plxscripting`. It uses Jupyter QtConsole and works great.
@@ -80,3 +86,6 @@ Notice that, when the results are called using `g_o.getresults(object,phase,g_o.
 
 <script src="https://gist.github.com/berkdemir/6b62233ab88631c0ac5e8bf864fe224e.js?file=BDPlaxisPlateForces.py"></script>
 
+Note that resulting M and N lists are nested list due to incoming list types. I am 100% sure there are better ways to do it, mine was just to save the day. I used a flattener to re-write the list with something like `flatten = lambda t: [item for sublist in t for item in sublist]`. You can modify the code above to get a proper list.
+
+**That's it!** Now that you have a list of M and N, so you can create your interaction diagram in another function and combine them!
