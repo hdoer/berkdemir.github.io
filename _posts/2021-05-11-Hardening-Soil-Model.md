@@ -32,7 +32,7 @@ Let's take a look at these concepts.
 
 ## Shear Hardening
 
-According to Plaxis Material Manual, shear hardening is used to model irreversible strains due to primary deviatoric loading. If we ignore the fancy functions for calculating strain, simply it can be defined as the ratio of failure divided by the $E_{50}$. So, here comes the difference between each stiffness modulus in HS. $E_{50}$ if used for shear deformations. (Also, Eu is used in the formulations.)
+According to Plaxis Material Manual, shear hardening is used to model irreversible strains due to primary deviatoric loading. If we ignore the fancy functions for calculating strain, simply it can be defined as the ratio of failure divided by the $$E_{50}$$. So, here comes the difference between each stiffness modulus in HS. $E_{50}$ if used for shear deformations. (Also, Eu is used in the formulations.)
 
 *Primary deviatoric loading* is used everywhere in HS literature. However, I went over 875 google results 2 years ago and there are only two definition. One of them is given in first sentence of this chapter and other is *"When subjected to primary deviatoric loading, soil shows a decreasing stiffness"*. This is a concept deriven from Kondner (1963) and Duncan and Chang (1963): Hyperbolic relationship between deviatoric stress and stiffness. *Primary* simply means virgin loading. Deviatoric loading is same as we know from triaxial test.
 
