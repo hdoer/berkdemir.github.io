@@ -32,7 +32,7 @@ Let's take a look at these concepts.
 
 ## Shear Hardening
 
-According to Plaxis Material Manual, shear hardening is used to model irreversible strains due to primary deviatoric loading. If we ignore the fancy functions for calculating strain, simply it can be defined as the ratio of failure divided by the $$E_{50}$$. So, here comes the difference between each stiffness modulus in HS. $E_{50}$ if used for shear deformations. (Also, Eu is used in the formulations.)
+According to Plaxis Material Manual, shear hardening is used to model irreversible strains due to primary deviatoric loading. If we ignore the fancy functions for calculating strain, simply it can be defined as the ratio of failure divided by the $$E_{50}$$. So, here comes the difference between each stiffness modulus in HS. $$E_{50}$$ if used for shear deformations. (Also, Eu is used in the formulations.)
 
 *Primary deviatoric loading* is used everywhere in HS literature. However, I went over 875 google results 2 years ago and there are only two definition. One of them is given in first sentence of this chapter and other is *"When subjected to primary deviatoric loading, soil shows a decreasing stiffness"*. This is a concept deriven from Kondner (1963) and Duncan and Chang (1963): Hyperbolic relationship between deviatoric stress and stiffness. *Primary* simply means virgin loading. Deviatoric loading is same as we know from triaxial test.
 
@@ -40,7 +40,7 @@ According to Plaxis Material Manual, shear hardening is used to model irreversib
 
 To simplify;
 
-* Shear hardening depends on $E_{50}$.
+* Shear hardening depends on $$E_{50}$$.
 * Plastic strains occur before the yield. 
 
 ## Compression Hardening
@@ -53,15 +53,15 @@ We should know that: Plastic yielding depends on the position of yield surface. 
 
 > The plastic yielding always begins when the current pre-consolidation stress (i.e. the largest mean effective stress before the unloading) is exceeded in reloading.
 
-Contrary to shear hardening, in compression hardening $E_{oed}$ is used for strains.
+Contrary to shear hardening, in compression hardening $$E_{oed}$$ is used for strains.
 
 ## Graphical Representation
 
 I have prepared a colorful figure to describe the yield surfaces in HS model. We have different regions:
 
 * Elastic part is shown in green region. In this region, we have elastic behaviour and material stiffness is derived from Eur. 
-* If we move on K0 line, we will reach compression yield surface (cap) and in that zone, $E_{oed}$ is used.
-* If we have shear we can move to shear hardening zone where $E_{50}$ is used for shear strains.
+* If we move on K0 line, we will reach compression yield surface (cap) and in that zone, $$E_{oed}$$ is used.
+* If we have shear we can move to shear hardening zone where $$E_{50}$$ is used for shear strains.
 * Or naturally, we can have combined hardening due to both shear and compression.
 * If we get too far from the K0 line, we can reach to Moh-Coulomb failure line.
 
@@ -124,21 +124,21 @@ Another example is shown below. We can see that due to load beneath the retainin
 Stiffness modulus of soil in HS depends on:
 
 * Reference stiffness modulus
-* $\sigma_3$: Lateral pressure on the soil
-* $p_{ref}$: Reference pressure
-* $m$: Power for stress-level dependency of stiffness
+* $$\sigma_3$$: Lateral pressure on the soil
+* $$p_{ref}$$: Reference pressure
+* $$m$$: Power for stress-level dependency of stiffness
 * Strength parameters
 
 ![image-20210511225447545](/images/HS8.png)
 
-What do we see here? For a reference pressure of 100 kPa (we will talk about later), we see that stiffness modulus is directly proportional to lateral pressure (or pressure on soil, in general). If lateral pressure on soil is **different than** $p_{ref}$, E **will not be equal to** $E^{ref}$.
+What do we see here? For a reference pressure of 100 kPa (we will talk about later), we see that stiffness modulus is directly proportional to lateral pressure (or pressure on soil, in general). If lateral pressure on soil is **different than** $$p_{ref}$$, E **will not be equal to** $$E^{ref}$$.
 
 ### E50
 
 **Reference modulus** means that stiffness modulus calculated at all-around pressure equal to pref. Plaxis uses 50% secant modulus. So, our procedure will be:
 
 * Perform triaxial test up to failure load qu at reference pressure (all-around pressure) pref.
-* Find the strain at qu/2 and calculate the $E_{50}^{ref}$.
+* Find the strain at qu/2 and calculate the $$E_{50}^{ref}$$.
 
 $$E_{50}^{ref}=\frac{0.5q_u}{\varepsilon_{1,50}} $$
 
@@ -158,7 +158,7 @@ We know that **we don't always have good quality laboratory tests** on hand. So,
 
 # Eoed
 
-There is also a simple method to calculate Eoed from oedometer tests although some can find this method unreliable. We can use elastic equations or simply $E_{oed}=1/m_v$. 
+There is also a simple method to calculate Eoed from oedometer tests although some can find this method unreliable. We can use elastic equations or simply $$E_{oed}=1/m_v$$. 
 
 How do we select the mv value to be used in the equation? In soil mechanics, we select the mv value based on the pressure we expect since mv depends on the pressure level. What about in Plaxis? For example, if we expect 300 kPa embankment load, should we select the mv from 300 kPa range? No! We have to select it based on the pref value we use. If we use pref = 100 kPa, we have to select the mv at 100 kPa range. 
 
@@ -198,7 +198,7 @@ $$m=0.7-RD/320$$
 
 ## Reloading Poisson's Ratio, v_ur
 
-Unloading/reloading poisson's ratio is denoted as $v_{ur}$. It should be noticed that $v_{ur}$ is **not** classical poisson's ratio! In the absence of laboratory data, it should be left as the default value 0.2.
+Unloading/reloading poisson's ratio is denoted as $$v_{ur}$$. It should be noticed that $$v_{ur}$$ is **not** classical poisson's ratio! In the absence of laboratory data, it should be left as the default value 0.2.
 
 ## OCR / POP
 
