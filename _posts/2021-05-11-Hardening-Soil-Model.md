@@ -11,7 +11,7 @@ Hardening Soil model (will be called **HS** from now on) was presented in an exc
 
 Hardening behaviour of soils is shown on the experiments on Tatsuoka and Ishihara (1978) on sand samples. On each cycle, yield starts on the previous cycle's maximum stress. We will see that later on on the preconsolidation pressure concept of HS.
 
-![Tatsuoka & Ishihara (1978)](../images/TatsuokaIshihara.png)
+![Tatsuoka & Ishihara (1978)](/images/TatsuokaIshihara.png)
 
 Vermeer (1978) defines a hardening parameter to **expand the yield surface** which is also an integral part of the HS model.
 
@@ -21,7 +21,7 @@ He clearly describes the hardening effect on the soils with the following:
 
 > The concept of a yield locus or yield surface is felt to be the most important concept of plasticity theory. It is a surface in stress space (a curve in the p, q-plane) separating stress states **which can be reached elastically** (the elastic domain) from those which **can only be obtained after plastic deformation or cannot be achieved at all**.
 
-![Vermeer 1978](../images/Vermeer1878.png)
+![Vermeer 1978](/images/Vermeer1878.png)
 
 Hardening means that **yield surface is not fixed** as described in Plaxis Material Manual. There are two types of hardening:
 
@@ -36,7 +36,7 @@ According to Plaxis Material Manual, shear hardening is used to model irreversib
 
 *Primary deviatoric loading* is used everywhere in HS literature. However, I went over 875 google results 2 years ago and there are only two definition. One of them is given in first sentence of this chapter and other is *"When subjected to primary deviatoric loading, soil shows a decreasing stiffness"*. This is a concept deriven from Kondner (1963) and Duncan and Chang (1963): Hyperbolic relationship between deviatoric stress and stiffness. *Primary* simply means virgin loading. Deviatoric loading is same as we know from triaxial test.
 
-![image-20210511220749956](../images/DuncanChang.png)
+![image-20210511220749956](/images/DuncanChang.png)
 
 To simplify;
 
@@ -47,7 +47,7 @@ To simplify;
 
 Compression hardening is not something unfamiliar to us. It is around here since Terzaghi. Preconsolidation pressure is used in consolidation calculations to seperate the virgin loading and reloading parts. 
 
-![image-20210511222313397](../images/Consolidation.png)
+![image-20210511222313397](/images/Consolidation.png)
 
 We should know that: Plastic yielding depends on the position of yield surface. So, if we exceed the yield surface, plasticity comes into action. Puzrin (2012) describes it really well:
 
@@ -65,33 +65,33 @@ I have prepared a colorful figure to describe the yield surfaces in HS model. We
 * Or naturally, we can have combined hardening due to both shear and compression.
 * If we get too far from the K0 line, we can reach to Moh-Coulomb failure line.
 
-![image-20210511222623425](../images/HS.png)
+![image-20210511222623425](/images/HS.png)
 
 Strain types are shown in the figure below.
 
-![image-20210511223027740](../images/HS-Strains.png)
+![image-20210511223027740](/images/HS-Strains.png)
 
 ### Journey of a Particle
 
 Let's see what happens when we load a initially elastic particle as shown below with red star.
 
-![image-20210511223218143](../images/HS1.png)
+![image-20210511223218143](/images/HS1.png)
 
 If we load the particle on K0 loading type, it will move on the K0 line. The initial preconsolidation pressure is now recalculated based on the maximum new stress. Based on the new preconsolidation pressure, yield surface expands. With expanding yield surface, elastic part where we use Eur is expanded too. So, if load is reduced now between blue star and red star, soil move on elastic region.
 
-![image-20210511223548895](../images/HS2.png)
+![image-20210511223548895](/images/HS2.png)
 
 If we load the soil in given direction below, it will cause shear hardening and this time initial shear yield surface will expand.
 
-![image-20210511223820046](../images/HS3.png)
+![image-20210511223820046](/images/HS3.png)
 
 If we load the soil in compression hardening zone with shear loading, it will enter to combined hardening part. In this case, both yield surface will expand.
 
-![image-20210511223937108](../images/HS4.png)
+![image-20210511223937108](/images/HS4.png)
 
 If we expand these surfaces up to Mohr Coulomb failure line and rotate it around the origin, we can have the classical shape we see in literature.
 
-![image-20210511224105907](../images/HS5.png)
+![image-20210511224105907](/images/HS5.png)
 
 ## Other Points Regarding Implementation of HS
 
@@ -111,11 +111,11 @@ Some additional random points:
 
 Let's see some examples. Using the Plaxis' option to see plastic points, we can observe these hardening behaviours.
 
-![image-20210511224824355](../images/HS6.png)
+![image-20210511224824355](/images/HS6.png)
 
 Another example is shown below. We can see that due to load beneath the retaining piles and (maybe) due to little overturning, there is combined and compression hardening below the piles. 
 
-![image-20210511225130451](../images/HS7.png)
+![image-20210511225130451](/images/HS7.png)
 
 # Parameters
 
@@ -129,7 +129,7 @@ Stiffness modulus of soil in HS depends on:
 * $m$: Power for stress-level dependency of stiffness
 * Strength parameters
 
-![image-20210511225447545](../images/HS8.png)
+![image-20210511225447545](/images/HS8.png)
 
 What do we see here? For a reference pressure of 100 kPa (we will talk about later), we see that stiffness modulus is directly proportional to lateral pressure (or pressure on soil, in general). If lateral pressure on soil is **different than** $p_{ref}$, E **will not be equal to** $E^{ref}$.
 
@@ -144,15 +144,15 @@ $$E_{50}^{ref}=\frac{0.5q_u}{\varepsilon_{1,50}} $$
 
 An example calculation is given below. Calculated E50 = 30.8 MPa is valid for pref = 100 kPa. So, when we define the material model in Plaxis, the default pref = 100 kPa value is correct for this case.
 
-![image-20210511230222994](../images/HS9.png)
+![image-20210511230222994](/images/HS9.png)
 
 Let's see another case. In this case, since y axis is given in a different configuration, some adjustments are needed. We can see from the calculations that E=200 MPa but it is valid for pref = 795 kPa. So, we have to change the reference pressure to 795 kPa before defining the stiffness modulus.
 
-![image-20210511230552738](../images/HS10.png)
+![image-20210511230552738](/images/HS10.png)
 
 Best way to calculate input values for different stiffness and all-around pressure values, if you have the enough number of data, is to plot the data on $$E_{50}/p_{ref}$$ & $$\sigma_3/p_{ref}$$.  An example calculation is shown below. In this case, if pref = 100 kPa, E is equal to 71 MPa and m = 0.66.
 
-![image-20210511230949282](../images/HS11.png)
+![image-20210511230949282](/images/HS11.png)
 
 We know that **we don't always have good quality laboratory tests** on hand. So, we usually use correlations with different site investigation methods. It is not very often to see reference pressure for stiffness correlations in literature. In that case, reference pressure of 100 kPa is usually selected since a good percentage of triaxial tests can be assumed to be performed on 100 kPa all-around pressure. However, there is no justification for this assumption.
 
@@ -172,7 +172,7 @@ Using the same approach described before, we can calculate the Eoed as below:
 
 An example of this procedure is shown below:
 
-![image-20210511233336301](../images/HS13.png)
+![image-20210511233336301](/images/HS13.png)
 
 ### Eur
 
@@ -190,7 +190,7 @@ $$ m=1.13-\frac{49}{LL+78} $$
 
 $$m=1-\frac{10.83}{PI+18.7}$$
 
-![image-20210511233033347](../images/HS12.png)
+![image-20210511233033347](/images/HS12.png)
 
 Also, Brinkgreve et. al. (2010) recommends following equation for granular soils. (See the original paper for other correlations regarding the HS parameters.)
 
