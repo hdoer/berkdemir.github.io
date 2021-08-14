@@ -81,11 +81,11 @@ Equation for sands from Terzaghi:
 
 $$k_s = k_1 \cdot (\frac{B+B1}{2B})^2=150000 \cdot (\frac{20+0.3}{2 \cdot 20})^2=38633kN/m3$$
 
-If we go back to our Settle 3D model where we found K=27000 kN/m3  and reduce the foundation size to 0.3x0.3m to represent a plate, the resulting deformation is **0.147 mm** for 200 kPa loading. The **modulus of subgrade reaction for plate loading on our weathered rock is 1,360,544 kN/m3**. 
+If we go back to our Settle 3D model where we found K=27000 kN/m3  and reduce the foundation size to 0.3x0.3m to represent a plate, the resulting deformation is **0.147 mm** for 200 kPa loading. **The modulus of subgrade reaction for plate loading on our weathered rock is 1,360,544 kN/m3**. If you do the same with immediate settlement hand calculations (such as Mayne & Poulos or Gazetas), the results are even higher (3 to 7 million kN/m3)
 
-If you do the same with immediate settlement hand calculations (such as Mayne & Poulos or Gazetas), the results are even higher (3 to 7 million kN/m3)
+What do we say? 100000 kN/m3 is very low for our rock, it should be much higher! But not for our foundation, for plate loading. In fact, if we draw a curve using Mayne and Poulos' settlement equation, it will look like this: You can see that for elasticity modulus of 50 MPa (stiff clay / dense sand), it is around what Bowles proposed.
 
-These values are not very high. In fact, the rock modulus is also measured this way with pressures on plates around 10 MPa and resulting deformation around 1 mm. So, if you compare, our rock is not that stiff. And it seems that if we perform a plate loading test on our rock, we would have a deformation in the order of 0.1 mm. Assuming our rock is very homogeneous, if we extend the size of the plate to our foundation size, the modulus of subgrade reaction drops to 27-28000 kN/m3. 
+![image-20210814211607941](/images/image-20210814211607941.png)
 
 What we understand from these text was given at the beginning: IT DEPENDS ON THE FOUNDATION SIZE. For our weathered rock, you can see how much it depends on the foundation size. 
 
