@@ -94,7 +94,7 @@ $$E_{rm} = 1000  \cdot (1-D/2) \sqrt{\sigma_{ci}/100} \cdot 10^{(GSI-10)/40}$$
 
 For UCS > 100 MPa:
 
-E_{rm} = 1000  \cdot (1-D/2)  \cdot 10^{(GSI-10)/40}
+$$E_{rm} = 1000  \cdot (1-D/2)  \cdot 10^{(GSI-10)/40}$$
 
 ### Yang (2006) Method
 
