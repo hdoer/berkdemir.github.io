@@ -3,6 +3,7 @@ layout: post
 title: Hoek Brown Model
 ---
 
+I have just published a new tool and this post will detail the methods that are being used in this tool. You can find this tool in https://berkdemir.github.io/HoekBrown/
 What it does: Performs Hoek-Brown analyses for rock and recommends additional parameters based on the inputs.
 
 # Theory
