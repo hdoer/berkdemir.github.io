@@ -53,7 +53,9 @@ $$K=40\cdot FS\cdot q_{all}$$
 
 What a magical formula. Let's start with the wrong use: If you ever calculated the bearing capacity from general bearing capacity formula (cNc+qNq+...) and use this equation with that bearing capacity, you were wrong.
 
-This is the derivation of this equation: Since general bearing capacity equation for granular soils results in very high bearing capacity, it was the general tendency to calculate a bearing capacity for settlement limits and that limit was 1 inch - 25 mm. You can calculate an **allowable bearing** capacity using SPT which is in fact the load that corresponds to 25 mm settlement. An example from Bowles is Parry (1977) equation: $q_a=30N_{55}$.
+This is the derivation of this equation: Since general bearing capacity equation for granular soils results in very high bearing capacity, it was the general tendency to calculate a bearing capacity for settlement limits and that limit was 1 inch - 25 mm. You can calculate an **allowable bearing** capacity using SPT which is in fact the load that corresponds to 25 mm settlement. An example from Bowles is Parry (1977) equation: 
+
+$$q_a=30N_{55}$$
 
 If you have the required load to generate a 25 mm settlement, you can also calculate the modulus of subgrade reaction using the logic below.
 

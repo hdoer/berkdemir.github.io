@@ -3,8 +3,6 @@ layout: post
 title: Hoek Brown Model
 ---
 
-# Hoek Brown Analysis
-
 What it does: Performs Hoek-Brown analyses for rock and recommends additional parameters based on the inputs.
 
 # Theory
@@ -23,7 +21,7 @@ Uniaxial compressive strength is the compressive strength of intact rock. In fie
 
 ### Geological Strength Index (GSI)
 
-GSI is a number between 0-100 that defines the weathering or joint degree of a rock mass. This value is usually determined on the field based on the tunnel or slope faces, boreholes or outcrops. It is possible to correlate GSI to RMR (Rock Mass Rating) value using variety of correlations available in the literature. The most commonly used correlation is $GSI=RMR-5$. However, it should be noted that RMR' should be recalculated by neglecting the effect of groundwater and tunnel orientation.
+GSI is a number between 0-100 that defines the weathering or joint degree of a rock mass. This value is usually determined on the field based on the tunnel or slope faces, boreholes or outcrops. It is possible to correlate GSI to RMR (Rock Mass Rating) value using variety of correlations available in the literature. The most commonly used correlation is GSI=RMR-5. However, it should be noted that RMR' should be recalculated by neglecting the effect of groundwater and tunnel orientation.
 
 GSI can also be estimated using the graph below. It is usually advised to keep the GSI above 25 for rock mass conditions.
 
@@ -36,8 +34,7 @@ Material constant (mi) is a fitting parameter which can be determined using the 
 ![images/mi.png](images/mi.png)
 
 ![images/Untitled.png](images/Untitled.png)
-
-Carter & Marinos (2020)
+*Carter & Marinos (2020)*
 
 ### Disturbance Factor
 
@@ -49,11 +46,11 @@ Disturbance Factor is used to reflect the disturbance due to blast damage or str
 
 Modulus ratio is the ratio of elastic modulus of intact rock to compressive strength of intact rock. In case of absence of any laboratory data, following ranges can be used.
 
-![images/Untitled%201.png](images/Untitled%201.png)
+![images/Untitled1.png](images/Untitled1.png)
 
-![images/Untitled%202.png](images/Untitled%202.png)
+![images/Untitled2.png](images/Untitled2.png)
 
-Carter and Marinos (2020)
+*Carter and Marinos (2020)*
 
 ## General Equations
 
@@ -91,11 +88,13 @@ $$E_{rm} = 100000\cdot \left( 0.02+\frac{1-D/2} {1+e^{((75+25D-GSI)/11)}} \right
 
 ### Hoek, Carranza-Torres & Corkum (2002) Method
 
-$For \ UCS < 100\ MPa:$
+For UCS < 100 MPa:
 
 $$E_{rm} = 1000  \cdot (1-D/2) \sqrt{\sigma_{ci}/100} \cdot 10^{(GSI-10)/40}$$
 
-$$E_{rm} = 1000  \cdot (1-D/2) \sqrt{\sigma_{ci}/100} \cdot 10^{(GSI-10)/40}$$
+For UCS > 100 MPa:
+
+E_{rm} = 1000  \cdot (1-D/2)  \cdot 10^{(GSI-10)/40}
 
 ### Yang (2006) Method
 
@@ -105,21 +104,21 @@ $$E_{rm} = \frac{E_i}{100} \cdot e^{GSI/21.7}$$
 
 Equivalent Mohr-Coulomb (MC) parameters can be estimated using the equations below. MC fit for HB parameters is just an approximation for the nonlinear HB curve on the given minor stress. Therefore, the MC parameters should be estimated using the expected pressures. In any case, Hoek and Brown recommends using HB parameters when possible.
 
-![images/Untitled%203.png](images/Untitled%203.png)
+![images/Untitled3.png](images/Untitled3.png)
 
-Maximum lateral pressure, $\sigma_{3,max}$ can be estimated using the approximate equations given by Hoek. Note that $\sigma_{cm}$ is rock mass strength and can be calcualated using the equation below:
+Maximum lateral pressure, sigma_3 can be estimated using the approximate equations given by Hoek. Note that sigma_cm is rock mass strength and can be calcualated using the equation below:
 
-![images/Untitled%204.png](images/Untitled%204.png)
+![images/Untitled4.png](images/Untitled4.png)
 
 ### Lateral Pressure for Tunnels
 
-![images/Untitled%205.png](images/Untitled%205.png)
+![images/Untitled5.png](images/Untitled5.png)
 
 ### Lateral Pressure for Slopes
 
 H is the height of the slope.
 
-![images/Untitled%206.png](images/Untitled%206.png)
+![images/Untitled6.png](images/Untitled6.png)
 
 ### General
 
@@ -135,29 +134,33 @@ To calculate the shear wave velocity in rock *Q* (Barton) - *Vp* an *Vs* r
 
 $$Q = 10^{\frac{RMR - 50}{15}}$$
 
-RMR will be calculated assuming $GSI = RMR - 5$.
+RMR will be calculated assuming GSI = RMR - 5.
 
 Barton (2002), described the relationship between *Q* and *Vp* (km/sec) as:
 
 $$V_{p} = 3.5 + \log Q_{c}Vp=3.5+logQc$$
 
-The $Q_c$ in this equation is the *Q* normalized with uniaxial compressive strength which can be calculated as  $Q_{c} = Q \cdot \left( \frac{\text{UCS}}{100} \right)$with *UCS* in *MPa*. Lastly, the relationship between *Vp* and *Vs* is adapted from a USGS research project, Brocher (2005):
+The Qc in this equation is the *Q* normalized with uniaxial compressive strength which can be calculated as  
+
+$$Q_{c} = Q \cdot \left( \frac{\text{UCS}}{100} \right)$$
+
+with *UCS* in *MPa*. Lastly, the relationship between *Vp* and *Vs* is adapted from a USGS research project, Brocher (2005):
 
 $$V_{s} = 0.7858 - 1.2344 \cdot V_{p} + 0.7949 \cdot V_{p}^{2} - 0.1238 \cdot V_{p}^{3} + 0.0064 \cdot V_{p}^{4}Vs=0.7858−1.2344⋅Vp+0.7949⋅Vp2−0.1238⋅Vp3+0.0064⋅Vp4$$
 
 Vs and Vp in this equation is in km/sec.
 
-![images/Untitled%207.png](images/Untitled%207.png)
+![images/Untitled7.png](images/Untitled7.png)
 
 ### Poisson's Ratio by Brocher 2005
 
 $$v = 0.8835-0.315V_p + 0.0491V_p^2-0.00024V_p^3$$
 
-![images/Untitled%208.png](images/Untitled%208.png)
+![images/Untitled8.png](images/Untitled8.png)
 
 ### Shear Wave Velocity by Cha 2006
 
-![images/Untitled%209.png](images/Untitled%209.png)
+![images/Untitled9.png](images/Untitled9.png)
 
 # References
 
