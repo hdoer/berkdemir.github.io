@@ -25,15 +25,15 @@ GSI is a number between 0-100 that defines the weathering or joint degree of a r
 
 GSI can also be estimated using the graph below. It is usually advised to keep the GSI above 25 for rock mass conditions.
 
-![images/GSI.png](images/GSI.png)
+![/images/GSI.png](/images/GSI.png)
 
 ### Material Constant for Intact Rock
 
 Material constant (mi) is a fitting parameter which can be determined using the curve fitting technique on high quality triaxial tests or can be estimated using the ranges given in the table or figure below.
 
-![images/mi.png](images/mi.png)
+![/images/mi.png](/images/mi.png)
 
-![images/Untitled.png](images/Untitled.png)
+![/images/Untitled.png](/images/Untitled.png)
 *Carter & Marinos (2020)*
 
 ### Disturbance Factor
@@ -46,9 +46,9 @@ Disturbance Factor is used to reflect the disturbance due to blast damage or str
 
 Modulus ratio is the ratio of elastic modulus of intact rock to compressive strength of intact rock. In case of absence of any laboratory data, following ranges can be used.
 
-![images/Untitled1.png](images/Untitled1.png)
+![/images/Untitled1.png](/images/Untitled1.png)
 
-![images/Untitled2.png](images/Untitled2.png)
+![/images/Untitled2.png](/images/Untitled2.png)
 
 *Carter and Marinos (2020)*
 
@@ -104,21 +104,21 @@ $$E_{rm} = \frac{E_i}{100} \cdot e^{GSI/21.7}$$
 
 Equivalent Mohr-Coulomb (MC) parameters can be estimated using the equations below. MC fit for HB parameters is just an approximation for the nonlinear HB curve on the given minor stress. Therefore, the MC parameters should be estimated using the expected pressures. In any case, Hoek and Brown recommends using HB parameters when possible.
 
-![images/Untitled3.png](images/Untitled3.png)
+![/images/Untitled3.png](/images/Untitled3.png)
 
 Maximum lateral pressure, sigma_3 can be estimated using the approximate equations given by Hoek. Note that sigma_cm is rock mass strength and can be calcualated using the equation below:
 
-![images/Untitled4.png](images/Untitled4.png)
+![/images/Untitled4.png](/images/Untitled4.png)
 
 ### Lateral Pressure for Tunnels
 
-![images/Untitled5.png](images/Untitled5.png)
+![/images/Untitled5.png](/images/Untitled5.png)
 
 ### Lateral Pressure for Slopes
 
 H is the height of the slope.
 
-![images/Untitled6.png](images/Untitled6.png)
+![/images/Untitled6.png](/images/Untitled6.png)
 
 ### General
 
@@ -150,17 +150,17 @@ $$V_{s} = 0.7858 - 1.2344 \cdot V_{p} + 0.7949 \cdot V_{p}^{2} - 0.1238 \cdot V_
 
 Vs and Vp in this equation is in km/sec.
 
-![images/Untitled7.png](images/Untitled7.png)
+![/images/Untitled7.png](/images/Untitled7.png)
 
 ### Poisson's Ratio by Brocher 2005
 
 $$v = 0.8835-0.315V_p + 0.0491V_p^2-0.00024V_p^3$$
 
-![images/Untitled8.png](images/Untitled8.png)
+![/images/Untitled8.png](/images/Untitled8.png)
 
 ### Shear Wave Velocity by Cha 2006
 
-![images/Untitled9.png](images/Untitled9.png)
+![/images/Untitled9.png](/images/Untitled9.png)
 
 # References
 
